@@ -1,5 +1,8 @@
 // 언팩으로 사용하고 싶으면 함수명과 이벤트핸들러의 명이 같아야함.
 // onClick 이벤트에 주고 싶으면 const onClick = () => {} 이런식
+
+import { useState } from "react";
+
 // vaild 특정 문자를 걸러주는 함수.
 export const useInput = (initialValue, validator) => {
   const [value, setValue] = useState(initialValue);

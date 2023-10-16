@@ -26,19 +26,3 @@ const useClick = (onClick) => {
   // 여기서 ref한 element를 리턴하기 때문에 title === useRef()
   return element;
 };
-
-function App() {
-  const clickFn = () => {
-    setInterval(() => {
-      console.log("hi");
-    }, 1000);
-  };
-  const title = useClick(clickFn);
-  return (
-    <div>
-      <h1 ref={title}>hi</h1>
-    </div>
-  );
-}
-
-export default App;
