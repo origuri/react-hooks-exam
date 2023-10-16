@@ -15,15 +15,3 @@ const useBeforeLeave = (onBefore) => {
     return () => document.removeEventListener("mouseleave", handle);
   }, []);
 };
-
-function App() {
-  const begForBefore = () => console.log("dont leave!");
-  useBeforeLeave(begForBefore);
-  return (
-    <div>
-      <h1>hi</h1>
-    </div>
-  );
-}
-
-export default App;
