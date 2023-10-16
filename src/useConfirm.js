@@ -11,18 +11,3 @@ const useConfirm = (message, callback) => {
   };
   return confirmAction;
 };
-
-function App() {
-  const deleteWorld = () => {
-    console.log("delete the world");
-  };
-  // 함수 자체가 리턴되기 때문에 window.confirm이 실행됨.
-  const confirmDelete = useConfirm("real?", deleteWorld);
-  return (
-    <div>
-      <button onClick={confirmDelete}>Delete th world</button>
-    </div>
-  );
-}
-
-export default App;
