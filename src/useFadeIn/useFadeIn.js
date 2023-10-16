@@ -16,16 +16,3 @@ const useFadeIn = (duration = 1, delay = 0) => {
     style: { opacity: 0 },
   };
 };
-
-function App() {
-  const el = useFadeIn(4, 5);
-  const el2 = useFadeIn(8);
-  return (
-    <div>
-      <h1 {...el}>hi</h1>
-      <p {...el2}>sdfsad</p>
-    </div>
-  );
-}
-
-export default App;
