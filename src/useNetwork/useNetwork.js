@@ -24,17 +24,3 @@ const useNetwork = (onChange) => {
 
   return status;
 };
-
-function App() {
-  const handleNetwork = (online) => {
-    console.log(online ? "온라인1" : "오프라인1");
-  };
-  const onLine = useNetwork(handleNetwork);
-  return (
-    <div>
-      <h1>{onLine ? "온라인" : "오프라인"}</h1>
-    </div>
-  );
-}
-
-export default App;
