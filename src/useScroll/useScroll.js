@@ -23,15 +23,3 @@ const useScroll = () => {
 
   return state;
 };
-
-function App() {
-  // return이 state이고 그 안에 객체로 x, y값이 있기 때문에 분할 할당 구조로 가져올 수 있음.
-  const { y } = useScroll();
-  return (
-    <div style={{ height: "1000vh" }}>
-      <h1 style={{ position: "fixed", color: y > 100 ? "blue" : "red" }}>h2</h1>
-    </div>
-  );
-}
-
-export default App;
