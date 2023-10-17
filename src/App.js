@@ -1,7 +1,7 @@
 import useFetch from "./useFetch/useFetch";
 
 function App() {
-  const url = "https://yts.mx/api/v2/list_";
+  const url = "https://yts.mx/api/v2/list_movies.json";
   const { apiData, loading, error } = useFetch(url);
   console.log(
     `로딩 다되면 false임 -> ${loading}, error 나면 뭐 뜰꺼임 -> ${error}`
